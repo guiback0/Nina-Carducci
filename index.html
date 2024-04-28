@@ -105,20 +105,21 @@
 </head>
 
 <body>
-	<header>
-		<h1 class="name">Nina Carducci</h1>
-		<nav>
+	<header role="banner">
+		<h1 class="name" aria-label="Menu de navigation principal">Nina Carducci</h1>
+		<nav role="navigation" aria-label="navigation principale">
 			<ul>
 				<li><a href="#about">À propos</a></li>
 				<li><a href="#gallery">Galerie</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-						target="_blank"><img src="assets/images/instagram.webp" alt="instagram"></a></li>
+				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"
+						aria-label="Lien vers le compte Instagram de Nina Carducci"><img
+							src="assets/images/instagram.webp" alt="instagram"></a></li>
 			</ul>
 		</nav>
 	</header>
-	<div id="carousel">
+	<div id="carousel" aria-label="Carousel d'images">
 
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
@@ -207,7 +208,7 @@
 					alt="Photo d'une personne souriante devant son ordinateur" loading="lazy">
 			</div>
 		</div>
-		<div class="quote">
+		<article class="quote">
 			<blockquote cite="https://phototrend.fr/2008/08/richard-avedon-au-jeu-de-paume/">
 				<p class="quote__text">
 					Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
@@ -217,7 +218,7 @@
 				</p>
 				<footer class="quote__author"><cite>- Richard Avedon</cite></footer>
 			</blockquote>
-		</div>
+		</article>
 	</section>
 	<section id="services">
 		<h2 class="title">My services</h2>
@@ -258,23 +259,24 @@
 				</div>
 			</div>
 		</div>
+		<article class="quote">
+			<blockquote cite="https://phototrend.fr/2012/10/zoom-photographe-steve-mccurry/">
+				<p class="quote__text">
+					De manière inconsciente, je crois, je guette un regard, une
+					expression, des traits ou une nostalgie capable de résumer ou plus
+					exactement de révéler une vie
+				</p>
+				<footer class="quote__author"><cite>- Steve McCurry</cite></footer>
+			</blockquote>
+		</article>
 	</section>
-	<aside class="quote">
-		<blockquote cite="https://phototrend.fr/2012/10/zoom-photographe-steve-mccurry/">
-			<p class="quote__text">
-				De manière inconsciente, je crois, je guette un regard, une
-				expression, des traits ou une nostalgie capable de résumer ou plus
-				exactement de révéler une vie
-			</p>
-			<footer class="quote__author"><cite>- Steve McCurry</cite></footer>
-		</blockquote>
-	</aside>
+
 	<section id="contact">
 		<div class="container">
 			<div class="form-container">
 				<h2>Une question ? Une demande de devis ?</h2>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures.</p>
-				<form action="#" method="post">
+				<form action="#" method="post" role="form">
 					<label for="name">Nom</label>
 					<input type="text" name="name" id="name">
 					<label for="email">Email</label>
@@ -291,7 +293,7 @@
 	</section>
 
 	<footer class="footer">
-		<a href="index.html">
+		<a href="index.html" aria-label="Lien vers la page d'accueil">
 			<p class="logo">Nina Carducci</p>
 		</a>
 		<div class="adress">
@@ -305,7 +307,7 @@
 				<li>
 					<p>
 						<i class="fa-solid fa-mobile-screen-button"></i>
-						05 56 67 78 89
+						<a href="tel:0556677889" aria-label="Numéro de téléphone">05 56 67 78 89</a>
 					</p>
 				</li>
 				<li>
@@ -316,16 +318,20 @@
 		<div class="socials">
 			<ul>
 				<li>
-					<a href="https://www.instagram.com/" target="_blank" aria-label="lien vers instagram"><i
-							class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.instagram.com/" target="_blank" aria-label="lien vers instagram">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
 				</li>
 				<li>
-					<a href="https://www.facebook.com/" target="_blank" aria-label="icon facebook"><i
-							class="fa-brands fa-facebook-f"></i></a>
+					<a href="https://www.facebook.com/" target="_blank" aria-label="icon facebook"
+						aria-label="Lien vers Facebook">
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
 				</li>
 				<li>
-					<a href="https://www.twitter.com/" target="_blank" aria-label="icon twitter"><i
-							class="fa-brands fa-x-twitter"></i></a>
+					<a href="https://www.twitter.com/" target="_blank" aria-label="icon twitter"
+						aria-label="Lien vers Twitter"><i class="fa-brands fa-x-twitter"></i>
+					</a>
 				</li>
 			</ul>
 			<p>Copyright © 2024</p>
